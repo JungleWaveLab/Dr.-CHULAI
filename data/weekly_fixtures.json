@@ -26,12 +26,11 @@
       "Draw",
       "Juve Win"
     ],
-    "analysis_note": "🔥 [빅매치] 이탈리아 더비: 인테르, 홈에서 라이벌 제압 노린다",
+    "analysis_note": "🔥 [실제 배정] 이탈리아 더비: 인테르, 홈에서 라이벌 제압 노린다",
     "key_factors": [
-      "📉 압도적 승점차: 1위 인테르(58점)와 4위 유벤투스(46점)의 격차는 12점. 인테르의 시즌 장악력이 돋보임.",
+      "📉 성적 격차: 1위 인테르(58점)와 4위 유벤투스(46점). 인테르의 시즌 장악력이 돋보임.",
       "⚔️ 상대 전적 우위: 최근 5차례 맞대결에서 인테르가 홈에서 강한 면모를 보였음.",
-      "🔥 최강 화력: 인테르는 팀 득점 65골로 리그 유일의 경기당 2.7골 이상 득점 팀.",
-      "🛡 유벤투스의 딜레마: 유벤투스는 최소 실점 2위의 짠물 수비를 자랑하지만, 원정에서 득점력이 급감하는 문제를 해결하지 못함."
+      "🔥 최강 화력: 인테르는 팀 득점 65골로 리그 유일의 경기당 2.7골 이상 득점 팀."
     ]
   },
   {
@@ -61,11 +60,45 @@
       "Atalanta Win",
       "Draw"
     ],
-    "analysis_note": "👀 [주목] 챔스권 경쟁: '닥공' 아탈란타의 우세 예상",
+    "analysis_note": "⚔️ 챔스권 티켓 경쟁 매치",
     "key_factors": [
       "📉 라치오의 부진: 최근 5경기 3패. 수비 조직력이 무너지며 실점이 늘어나고 있음.",
-      "🚀 아탈란타의 상승세: 최근 원정에서도 공격적인 전술이 통하며 승점을 챙기고 있음.",
-      "⚽ 득점력 차이: 아탈란타(40골) vs 라치오(35골). 화력 대결에서 원정 팀이 근소 우위."
+      "🚀 아탈란타의 화력: '닥공' 스타일이 살아나며 원정에서도 다득점 경기를 펼침.",
+      "⚖️ 예측 불허: 두 팀 모두 공격 지향적이라 난타전 양상 가능성 높음."
+    ]
+  },
+  {
+    "league": "세리에 A",
+    "home_team": "코모",
+    "away_team": "피오렌티나",
+    "date": "2026-02-14",
+    "time": "14:00",
+    "home_stats": {
+      "played": 24,
+      "points": 25,
+      "goals_for": 28,
+      "goals_against": 38,
+      "recent_form": "LLDWL"
+    },
+    "away_stats": {
+      "played": 24,
+      "points": 38,
+      "goals_for": 35,
+      "goals_against": 29,
+      "recent_form": "WWLDW"
+    },
+    "h2h_last_5": [
+      "Fiorentina Win",
+      "Fiorentina Win",
+      "Draw",
+      "Como Win",
+      "Draw"
+    ],
+    "analysis_note": "🎣 코모의 잔류 투쟁 vs 피오렌티나의 상위권 도약",
+    "key_factors": [
+      "📉 코모의 수비 불안: 경기당 1.5골 이상의 실점으로 뒷문이 헐거움.",
+      "⚜️ 피오렌티나의 상승세: 최근 원정 승률이 60%를 넘으며 기세가 좋음.",
+      "⚽ 득점 루트: 피오렌티나의 다양한 공격 옵션을 코모가 막기 버거울 것."
     ]
   },
   {
@@ -97,9 +130,9 @@
     ],
     "analysis_note": "🌋 [에투나 더비] 나폴리의 홈 텃세 vs 로마의 역습",
     "key_factors": [
-      "🏟 스타디오 마라도나의 이점: 나폴리는 이번 시즌 홈 승률 75% 이상을 기록 중.",
-      "⚖️ 팽팽한 중원 싸움: 양 팀 모두 미드필드진이 탄탄하나, 결정력에서 나폴리의 오시멘/크바라 듀오가 앞섬.",
-      "📉 로마의 기복: 로마는 원정 경기에서 강팀 상대로 수비 집중력이 흔들리는 경향."
+      "🏟 홈 텃세: 나폴리 원정은 지옥과도 같음. 홈 승률 70% 상회.",
+      "⚔️ 더비 매치: 치열한 중원 싸움이 예상되나 결정력에서 나폴리가 앞섬.",
+      "📉 로마의 원정 기복: 로마는 원정에서 강팀 상대로 종종 무기력한 모습을 보임."
     ]
   },
   {
@@ -131,214 +164,179 @@
     ],
     "analysis_note": "🦅 [확실한 승부] 5연승 AC 밀란 vs 강등권 베로나",
     "key_factors": [
-      "🌊 체급 차이: 밀란은 최근 5연승으로 최고의 기세. 베로나는 강등권 탈출을 위해 발버둥치고 있으나 전력 차가 큼.",
-      "⚽ 득점 루트 다양성: 밀란은 레앙, 풀리식 등 다양한 득점원을 보유.",
-      "🛡 베로나 수비 붕괴: 최근 5경기 평균 2실점 이상 허용 중."
+      "🌊 넘사벽 전력 차: 5연승 중인 밀란과 강등권 베로나의 대결.",
+      "🛡 베로나의 자동문 수비: 최근 5경기 12실점. 밀란 공격진의 먹잇감이 될 듯.",
+      "⚽ 레앙/풀리식: 밀란 윙어들의 속도가 베로나 수비진을 초토화시킬 것."
     ]
   },
   {
-    "league": "라리가",
-    "home_team": "레알 마드리드",
-    "away_team": "레알 소시에다드",
-    "date": "2026-02-14",
-    "time": "21:00",
+    "league": "세리에 A",
+    "home_team": "제노아",
+    "away_team": "토리노",
+    "date": "2026-02-15",
+    "time": "15:00",
     "home_stats": {
-      "played": 23,
-      "points": 57,
-      "goals_for": 49,
-      "goals_against": 18,
-      "recent_form": "WWWDW"
+      "played": 24,
+      "points": 28,
+      "goals_for": 25,
+      "goals_against": 30,
+      "recent_form": "DDLDL"
     },
     "away_stats": {
-      "played": 23,
-      "points": 34,
-      "goals_for": 28,
-      "goals_against": 30,
-      "recent_form": "LDWDL"
+      "played": 24,
+      "points": 31,
+      "goals_for": 22,
+      "goals_against": 25,
+      "recent_form": "WDDLL"
     },
     "h2h_last_5": [
-      "Real Win",
-      "Real Win",
-      "Sociedad Win",
-      "Real Win",
+      "Draw",
+      "Torino Win",
+      "Genoa Win",
+      "Draw",
+      "Torino Win"
+    ],
+    "analysis_note": "⚔️ 중위권의 팽팽한 접전 예상",
+    "key_factors": [
+      "🤝 무승부 전문가들: 두 팀 모두 무승부 빈도가 매우 높음.",
+      "🛡 수비 지향적 전술: 대량 득점보다는 1골 싸움이 될 공산이 큼.",
+      "📉 득점 빈곤: 양 팀 합쳐 경기당 2골을 넘기 힘들 것으로 보임."
+    ]
+  },
+  {
+    "league": "세리에 A",
+    "home_team": "엠폴리",
+    "away_team": "칼리아리",
+    "date": "2026-02-15",
+    "time": "15:00",
+    "home_stats": {
+      "played": 24,
+      "points": 22,
+      "goals_for": 18,
+      "goals_against": 35,
+      "recent_form": "LLWDW"
+    },
+    "away_stats": {
+      "played": 24,
+      "points": 20,
+      "goals_for": 20,
+      "goals_against": 40,
+      "recent_form": "LLLLD"
+    },
+    "h2h_last_5": [
+      "Empoli Win",
+      "Draw",
+      "Cagliari Win",
+      "Empoli Win",
       "Draw"
     ],
-    "analysis_note": "🏰 [베르나베우의 요새] 레알 마드리드, 홈 불패 행진 이어간다",
+    "analysis_note": "📉 강등권 탈출 매치. 홈팀 엠폴리의 근소 우위.",
     "key_factors": [
-      "🏠 홈 극강 모드: 레알 마드리드는 이번 시즌 홈에서 단 한 번도 지지 않음.",
-      "📉 소시에다드의 추락: 시즌 초반 돌풍이 잠잠해지며 중위권으로 처짐. 최근 득점 난조.",
-      "🤕 부상 공백: 소시에다드 핵심 미드필더의 결장이 뼈아픔.",
-      "💪 공수 밸런스: 레알의 +31 득실차는 리그 최고 수준."
+      "🏟 홈 이점: 승점 6점짜리 경기에서 홈 관중의 응원은 큰 변수.",
+      "📉 칼리아리 원정 전패급: 칼리아리는 원정에서 승점을 거의 따지 못하고 있음.",
+      "⚔️ 절박함: 두 팀 모두 수비보다는 승리를 위해 공격적으로 나올 가능성."
     ]
   },
   {
-    "league": "라리가",
-    "home_team": "FC 바르셀로나",
-    "away_team": "라요 바예카노",
+    "league": "세리에 A",
+    "home_team": "레체",
+    "away_team": "볼로냐",
     "date": "2026-02-15",
-    "time": "16:15",
+    "time": "12:30",
     "home_stats": {
-      "played": 23,
-      "points": 58,
-      "goals_for": 63,
-      "goals_against": 23,
-      "recent_form": "WWLWW"
-    },
-    "away_stats": {
-      "played": 23,
+      "played": 24,
       "points": 24,
       "goals_for": 22,
-      "goals_against": 35,
-      "recent_form": "LLWDL"
-    },
-    "h2h_last_5": [
-      "Barca Win",
-      "Draw",
-      "Rayo Win",
-      "Barca Win",
-      "Barca Win"
-    ],
-    "analysis_note": "🔵🔴 [선두 질주] 바르셀로나의 화력쇼 예상",
-    "key_factors": [
-      "⚽ 압도적 화력: 바르셀로나는 리그 최다 득점(63골) 팀. 라요의 수비진이 감당하기 힘들 것.",
-      "📉 라요의 원정 약점: 라요는 홈보다 원정에서 경기력이 급격히 떨어지는 팀.",
-      "👀 관전 포인트: 레반도프스키/야말 콤비의 득점포 가동 여부."
-    ]
-  },
-  {
-    "league": "라리가",
-    "home_team": "아틀레티코 마드리드",
-    "away_team": "오사수나",
-    "date": "2026-02-15",
-    "time": "18:30",
-    "home_stats": {
-      "played": 23,
-      "points": 45,
-      "goals_for": 38,
-      "goals_against": 18,
-      "recent_form": "DWDWW"
+      "goals_against": 33,
+      "recent_form": "LDDLL"
     },
     "away_stats": {
-      "played": 23,
-      "points": 29,
-      "goals_for": 25,
-      "goals_against": 32,
-      "recent_form": "WLLDD"
+      "played": 24,
+      "points": 42,
+      "goals_for": 38,
+      "goals_against": 28,
+      "recent_form": "WWDLW"
     },
     "h2h_last_5": [
-      "Atletico Win",
-      "Atletico Win",
-      "Atletico Win",
+      "Bologna Win",
+      "Bologna Win",
       "Draw",
-      "Osasuna Win"
+      "Lecce Win",
+      "Bologna Win"
     ],
-    "analysis_note": "🛡 [질식 수비] 아틀레티코, 무실점 승리 도전",
+    "analysis_note": "🎓 챔스권 노리는 볼로냐의 우세 예상",
     "key_factors": [
-      "🛡 철벽 방어: 아틀레티코는 리그 최소 실점 1위(18실점). 오사수나의 빈약한 공격력으로는 뚫기 어려움.",
-      "⚔️ 상성 관계: 최근 상대 전적에서 아틀레티코가 절대 우위.",
-      "💡 예상 흐름: 1-0 또는 2-0의 저득점 승리 패턴 유력."
+      "📈 볼로냐의 조직력: 모타 감독 체제 이후 끈끈한 조직력이 강점.",
+      "📉 레체 득점력 부재: 레체는 최근 3경기 무득점.",
+      "💪 중원 싸움: 볼로냐 미드필더진이 경기 주도권을 잡을 것."
     ]
   },
   {
-    "league": "분데스리가",
-    "home_team": "베르더 브레멘",
-    "away_team": "바이에른 뮌헨",
-    "date": "2026-02-14",
-    "time": "20:30",
+    "league": "세리에 A",
+    "home_team": "파르마",
+    "away_team": "우디네세",
+    "date": "2026-02-15",
+    "time": "15:00",
     "home_stats": {
-      "played": 21,
-      "points": 26,
+      "played": 24,
+      "points": 29,
       "goals_for": 30,
       "goals_against": 35,
-      "recent_form": "DLDWL"
+      "recent_form": "WLWDL"
     },
     "away_stats": {
-      "played": 21,
-      "points": 54,
-      "goals_for": 79,
-      "goals_against": 19,
-      "recent_form": "WWWWW"
+      "played": 24,
+      "points": 28,
+      "goals_for": 26,
+      "goals_against": 30,
+      "recent_form": "DLLWD"
     },
     "h2h_last_5": [
-      "Bayern Win",
-      "Bayern Win",
-      "Bayern Win",
-      "Bremen Win",
-      "Bayern Win"
-    ],
-    "analysis_note": "🚜 [골 폭격기] 뮌헨, 브레멘 원정 '학살' 예고",
-    "key_factors": [
-      "🚀 차원이 다른 화력: 뮌헨은 경기당 3.7골이라는 비현실적인 득점력을 과시 중.",
-      "👑 해리 케인: 득점 랭킹 1위 독주 중. 이번 경기도 멀티골 가능성 있음.",
-      "📉 브레멘의 한계: 중위권 전력으로 우승권 뮌헨을 막기엔 수비 조직력이 역부족.",
-      "📊 역사적 상성: 브레멘은 뮌헨만 만나면 작아지는 징크스."
-    ]
-  },
-  {
-    "league": "분데스리가",
-    "home_team": "도르트문트",
-    "away_team": "마인츠 05",
-    "date": "2026-02-14",
-    "time": "04:30",
-    "home_stats": {
-      "played": 21,
-      "points": 48,
-      "goals_for": 43,
-      "goals_against": 20,
-      "recent_form": "WWWDW"
-    },
-    "away_stats": {
-      "played": 21,
-      "points": 20,
-      "goals_for": 22,
-      "goals_against": 38,
-      "recent_form": "LLDDL"
-    },
-    "h2h_last_5": [
-      "Dortmund Win",
+      "Parma Win",
       "Draw",
-      "Dortmund Win",
-      "Mainz Win",
-      "Dortmund Win"
+      "Udinese Win",
+      "Draw",
+      "Parma Win"
     ],
-    "analysis_note": "🐝 [꿀벌 군단] 도르트문트, 홈 팬들 앞에서 승전보",
+    "analysis_note": "🤝 무승부 가능성이 높은 중위권 대결",
     "key_factors": [
-      "🏟 지그날 이두나 파크: 홈 관중의 열광적인 응원을 업은 도르트문트는 홈에서 매우 강함.",
-      "📉 마인츠의 위기: 강등권 싸움 중인 마인츠는 최근 5경기 2무 3패로 승리가 없음.",
-      "⚔️ 전력 차이: 공수 모든 지표에서 도르트문트가 압도."
+      "⚖️ 백중세: 전력 차가 거의 없는 두 팀의 대결.",
+      "🛡 우디네세의 피지컬: 우디네세의 거친 몸싸움에 파르마가 고전할 수 있음.",
+      "📉 결정력 부족: 양 팀 모두 확실한 해결사가 부족함."
     ]
   },
   {
-    "league": "분데스리가",
-    "home_team": "레버쿠젠",
-    "away_team": "볼프스부르크",
-    "date": "2026-02-14",
-    "time": "23:30",
+    "league": "세리에 A",
+    "home_team": "몬차",
+    "away_team": "베네치아",
+    "date": "2026-02-15",
+    "time": "15:00",
     "home_stats": {
-      "played": 20,
-      "points": 36,
-      "goals_for": 39,
-      "goals_against": 27,
-      "recent_form": "WLDWD"
-    },
-    "away_stats": {
-      "played": 20,
-      "points": 25,
+      "played": 24,
+      "points": 30,
       "goals_for": 28,
-      "goals_against": 33,
-      "recent_form": "DDLLW"
+      "goals_against": 30,
+      "recent_form": "DDWLW"
+    },
+    "away_stats": {
+      "played": 24,
+      "points": 18,
+      "goals_for": 19,
+      "goals_against": 42,
+      "recent_form": "LLLLL"
     },
     "h2h_last_5": [
-      "Leverkusen Win",
+      "Monza Win",
+      "Monza Win",
       "Draw",
-      "Leverkusen Win",
-      "Draw",
-      "Wolfsburg Win"
+      "Venezia Win",
+      "Monza Win"
     ],
-    "analysis_note": "💊 [바이 아레나] 레버쿠젠, 상위권 도약 기회",
+    "analysis_note": "🏎 몬차의 무난한 승리가 예상됨",
     "key_factors": [
-      "💡 전술적 우위: 알론소 감독의 레버쿠젠이 볼 점유율을 바탕으로 주도권을 쥘 것.",
-      "📉 볼프스부르크 원정: 기복이 심한 볼프스부르크는 강팀 원정에서 맥을 못 추는 경향."
+      "📉 베네치아 5연패: 총체적 난국에 빠진 원정 팀.",
+      "🏠 몬차 홈 강세: 중위권 팀들 상대로 홈에서는 승점을 잘 챙기는 편.",
+      "⚽ 득점력 차이: 베네치아는 리그 최저 득점 팀 중 하나."
     ]
   },
   {
@@ -368,11 +366,11 @@
       "City Win",
       "City Win"
     ],
-    "analysis_note": "🤖 [맨시티 압승 예상] 에버튼의 텐백, 뚫릴 수밖에 없다",
+    "analysis_note": "🤖 [우승 경쟁] 맨시티의 파괴력, 에버튼 텐백 뚫는다",
     "key_factors": [
-      "🌊 넘을 수 없는 벽: 승점 35점 차이. 사실상 '다윗과 골리앗'의 싸움.",
-      "📉 에버튼의 늪: 최근 원정 5경기 전패에 가까운 최악의 부진. 강등권 탈출이 시급하나 상대가 나쁨.",
-      "🤖 홀란드 & 덕배: 부상에서 복귀한 주전들의 폼이 절정. 다득점 승리 가능성 높음."
+      "🌊 넘을 수 없는 벽: 승점 35점 차이. 맨시티는 우승 경쟁, 에버튼은 강등 경쟁.",
+      "📉 에버튼 원정: 최근 원정 5경기 전패에 가까운 최악의 부진.",
+      "🤖 홀란드 & 덕배: 부상에서 복귀한 주전들의 폼이 절정."
     ]
   },
   {
@@ -402,11 +400,11 @@
       "Leicester Win",
       "Arsenal Win"
     ],
-    "analysis_note": "🔫 [북런던의 주인] 아스널, 레스터 잡고 선두 추격",
+    "analysis_note": "🔫 [선두 추격] 아스널, 승격팀 레스터 상대로 승점 3점",
     "key_factors": [
       "🏠 에미레이츠 요새: 아스널 홈 경기력은 리그 최상위권.",
-      "📉 레스터 수비 불안: 경기당 거의 2실점에 가까운 수비 허점 노출.",
-      "✨ 사카/외데고르: 아스널 2선의 창의성이 레스터 수비진을 붕괴시킬 것."
+      "✨ 사카/외데고르: 아스널 2선의 창의성이 레스터 수비진을 붕괴시킬 것.",
+      "🛡 레스터 수비 불안: 레스터는 강팀 원정에서 대량 실점하는 경향이 있음."
     ]
   },
   {
@@ -438,9 +436,893 @@
     ],
     "analysis_note": "🔴 [안필드] 리버풀, 늑대 사냥 나선다",
     "key_factors": [
-      "🏟 안필드의 공포: 리버풀 홈 경기장은 원정팀들의 무덤. 선수들의 활동량이 달라짐.",
-      "🐺 울버햄튼의 도깨비질: 강팀 상대로 간혹 고춧가루를 뿌리지만, 이번엔 전력 차가 뚜렷함.",
-      "⚽ 살라의 발끝: 득점왕 경쟁 중인 살라의 득점포 가동 예상."
+      "🏟 안필드의 공포: 리버풀 홈 경기장은 원정팀들의 무덤.",
+      "⚽ 살라의 발끝: 득점왕 경쟁 중인 살라의 득점포 가동 예상.",
+      "🐺 울버햄튼의 도깨비질: 가끔 강팀을 잡지만, 안필드에서는 역부족일 듯."
+    ]
+  },
+  {
+    "league": "프리미어리그",
+    "home_team": "맨체스터 유나이티드",
+    "away_team": "입스위치",
+    "date": "2026-02-14",
+    "time": "23:00",
+    "home_stats": {
+      "played": 24,
+      "points": 40,
+      "goals_for": 35,
+      "goals_against": 30,
+      "recent_form": "WLDWD"
+    },
+    "away_stats": {
+      "played": 24,
+      "points": 22,
+      "goals_for": 22,
+      "goals_against": 45,
+      "recent_form": "LLWDL"
+    },
+    "h2h_last_5": [
+      "ManUtd Win",
+      "ManUtd Win",
+      "Draw",
+      "ManUtd Win",
+      "Draw"
+    ],
+    "analysis_note": "👹 올드 트래포드에서의 맨유는 다르다",
+    "key_factors": [
+      "🏟 극장 승부의 달인: 맨유는 홈에서 후반 집중력이 강함.",
+      "📉 입스위치의 한계: 승격팀 입스위치는 원정 수비 조직력이 빈약함.",
+      "⚽ 래시포드/가르나초: 빠른 발을 이용한 역습이 주효할 것."
+    ]
+  },
+  {
+    "league": "프리미어리그",
+    "home_team": "토트넘 홋스퍼",
+    "away_team": "풀럼",
+    "date": "2026-02-15",
+    "time": "01:30",
+    "home_stats": {
+      "played": 24,
+      "points": 45,
+      "goals_for": 42,
+      "goals_against": 35,
+      "recent_form": "WLWDW"
+    },
+    "away_stats": {
+      "played": 24,
+      "points": 33,
+      "goals_for": 30,
+      "goals_against": 33,
+      "recent_form": "DLLWD"
+    },
+    "h2h_last_5": [
+      "Spurs Win",
+      "Spurs Win",
+      "Fulham Win",
+      "Spurs Win",
+      "Draw"
+    ],
+    "analysis_note": "🐓 캡틴 손흥민의 활약, 런던 더비 승리 조준",
+    "key_factors": [
+      "⚔️ 런던 더비: 치열한 접전이 예상되나 화력은 토트넘 우위.",
+      "🚀 쏘니의 폼: 손흥민은 풀럼전에서 강한 면모를 보여왔음.",
+      "🛡 풀럼의 역습: 풀럼의 날카로운 역습 한 방을 조심해야 함."
+    ]
+  },
+  {
+    "league": "프리미어리그",
+    "home_team": "첼시",
+    "away_team": "브렌트포드",
+    "date": "2026-02-15",
+    "time": "23:00",
+    "home_stats": {
+      "played": 24,
+      "points": 42,
+      "goals_for": 40,
+      "goals_against": 32,
+      "recent_form": "WLLWW"
+    },
+    "away_stats": {
+      "played": 24,
+      "points": 28,
+      "goals_for": 32,
+      "goals_against": 38,
+      "recent_form": "LLDWD"
+    },
+    "h2h_last_5": [
+      "Chelsea Win",
+      "Brentford Win",
+      "Draw",
+      "Chelsea Win",
+      "Brentford Win"
+    ],
+    "analysis_note": "🔵 첼시의 영건들, 홈 승리 노린다",
+    "key_factors": [
+      "💎 재능들의 집합소: 팔머, 엔조 등 첼시 2선의 창의성이 살아나는 중.",
+      "🐝 브렌트포드 天敵 관계: 브렌트포드는 첼시 원정에서 의외로 강했음 (주의 필요).",
+      "⚖️ 난타전 양상: 두 팀 모두 수비보단 공격."
+    ]
+  },
+  {
+    "league": "프리미어리그",
+    "home_team": "뉴캐슬",
+    "away_team": "노팅엄 포레스트",
+    "date": "2026-02-14",
+    "time": "23:00",
+    "home_stats": {
+      "played": 24,
+      "points": 38,
+      "goals_for": 45,
+      "goals_against": 30,
+      "recent_form": "DDWLW"
+    },
+    "away_stats": {
+      "played": 24,
+      "points": 24,
+      "goals_for": 28,
+      "goals_against": 45,
+      "recent_form": "WLLLL"
+    },
+    "h2h_last_5": [
+      "Newcastle Win",
+      "Newcastle Win",
+      "Forest Win",
+      "Newcastle Win",
+      "Draw"
+    ],
+    "analysis_note": "⚫️⚪️ 세인트 제임스 파크의 열기",
+    "key_factors": [
+      "🏟 홈 깡패 뉴캐슬: 홈에서는 뮌헨도 잡을 기세.",
+      "📉 노팅엄의 수비 붕괴: 최근 연패 기간 동안 실점이 너무 많음.",
+      "⚽ 이삭/고든: 뉴캐슬 공격진의 속도가 노팅엄 뒷공간을 파괴할 듯."
+    ]
+  },
+  {
+    "league": "프리미어리그",
+    "home_team": "아스톤 빌라",
+    "away_team": "크리스탈 팰리스",
+    "date": "2026-02-14",
+    "time": "23:00",
+    "home_stats": {
+      "played": 24,
+      "points": 41,
+      "goals_for": 44,
+      "goals_against": 33,
+      "recent_form": "WWLDD"
+    },
+    "away_stats": {
+      "played": 24,
+      "points": 29,
+      "goals_for": 30,
+      "goals_against": 35,
+      "recent_form": "LDWDL"
+    },
+    "h2h_last_5": [
+      "Villa Win",
+      "Palace Win",
+      "Draw",
+      "Villa Win",
+      "Villa Win"
+    ],
+    "analysis_note": "🦁 에메리 감독의 빌라, 홈 강세 지속",
+    "key_factors": [
+      "🧠 에메리 매직: 빌라의 홈 전술은 EPL 내에서도 손에 꼽힐 정도로 단단함.",
+      "📉 팰리스의 원정 부진: 팰리스는 원정에서 득점력이 급감함.",
+      "⚽ 왓킨스의 한 방: 해결사 왓킨스의 득점 감각이 좋음."
+    ]
+  },
+  {
+    "league": "프리미어리그",
+    "home_team": "브라이튼",
+    "away_team": "본머스",
+    "date": "2026-02-14",
+    "time": "23:00",
+    "home_stats": {
+      "played": 24,
+      "points": 35,
+      "goals_for": 38,
+      "goals_against": 35,
+      "recent_form": "DLLWD"
+    },
+    "away_stats": {
+      "played": 24,
+      "points": 27,
+      "goals_for": 30,
+      "goals_against": 40,
+      "recent_form": "WLDLW"
+    },
+    "h2h_last_5": [
+      "Brighton Win",
+      "Brighton Win",
+      "Bournemouth Win",
+      "Draw",
+      "Brighton Win"
+    ],
+    "analysis_note": "🌊 남해안 더비, 브라이튼의 공격 축구",
+    "key_factors": [
+      "⚔️ 더비 매치: 지역 라이벌전이라 치열하겠지만 전력은 브라이튼 우위.",
+      "⚽ 미토마의 드리블: 브라이튼 측면 공격이 본머스 수비를 흔들 것.",
+      "🛡 본머스 수비 불안: 본머스는 실점이 많은 팀 중 하나."
+    ]
+  },
+  {
+    "league": "프리미어리그",
+    "home_team": "웨스트햄",
+    "away_team": "사우스햄튼",
+    "date": "2026-02-15",
+    "time": "23:00",
+    "home_stats": {
+      "played": 24,
+      "points": 32,
+      "goals_for": 35,
+      "goals_against": 38,
+      "recent_form": "LWLDL"
+    },
+    "away_stats": {
+      "played": 24,
+      "points": 23,
+      "goals_for": 25,
+      "goals_against": 42,
+      "recent_form": "LLDDL"
+    },
+    "h2h_last_5": [
+      "WestHam Win",
+      "Southampton Win",
+      "Draw",
+      "WestHam Win",
+      "Draw"
+    ],
+    "analysis_note": "🔨 웨스트햄, 홈에서 반등 노린다",
+    "key_factors": [
+      "🏟 런던 스타디움: 웨스트햄은 홈에서 세트피스 강점을 잘 살림.",
+      "📉 성직자들의 위기: 사우스햄튼은 강등권 경쟁 중으로 분위기가 처져 있음.",
+      "⚽ 보웬의 왼발: 웨스트햄 에이스의 한 방을 기대."
+    ]
+  },
+  {
+    "league": "라리가",
+    "home_team": "레알 마드리드",
+    "away_team": "레알 소시에다드",
+    "date": "2026-02-14",
+    "time": "21:00",
+    "home_stats": {
+      "played": 23,
+      "points": 57,
+      "goals_for": 49,
+      "goals_against": 18,
+      "recent_form": "WWWDW"
+    },
+    "away_stats": {
+      "played": 23,
+      "points": 34,
+      "goals_for": 28,
+      "goals_against": 30,
+      "recent_form": "LDWDL"
+    },
+    "h2h_last_5": [
+      "Real Win",
+      "Real Win",
+      "Sociedad Win",
+      "Real Win",
+      "Draw"
+    ],
+    "analysis_note": "👑 [실제 배정] 베르나베우의 왕, 홈 불패 도전",
+    "key_factors": [
+      "🏠 홈 극강: 레알 마드리드는 이번 시즌 홈 무패 행진 중.",
+      "📉 소시에다드 부진: 최근 리그 5경기에서 단 1승.",
+      "🤕 전력 누수: 소시에다드 핵심 자원의 부상 이탈."
+    ]
+  },
+  {
+    "league": "라리가",
+    "home_team": "세비야",
+    "away_team": "알라베스",
+    "date": "2026-02-14",
+    "time": "18:30",
+    "home_stats": {
+      "played": 23,
+      "points": 30,
+      "goals_for": 31,
+      "goals_against": 33,
+      "recent_form": "WLDLW"
+    },
+    "away_stats": {
+      "played": 23,
+      "points": 26,
+      "goals_for": 22,
+      "goals_against": 35,
+      "recent_form": "LLDDL"
+    },
+    "h2h_last_5": [
+      "Sevilla Win",
+      "Draw",
+      "Alaves Win",
+      "Sevilla Win",
+      "Draw"
+    ],
+    "analysis_note": "🏟 안방 강자 세비야, 중위권 굳히기",
+    "key_factors": [
+      "🏟 홈 버프: 세비야는 홈에서 경기력이 2배 상승하는 팀.",
+      "📉 알라베스 원정 약세: 알라베스는 원정 득점력이 리그 최하위권.",
+      "⚔️ 경험의 차이: 세비야 선수들의 노련미가 앞설 것."
+    ]
+  },
+  {
+    "league": "라리가",
+    "home_team": "헤타페",
+    "away_team": "비야레알",
+    "date": "2026-02-14",
+    "time": "16:15",
+    "home_stats": {
+      "played": 23,
+      "points": 28,
+      "goals_for": 25,
+      "goals_against": 28,
+      "recent_form": "DDWLL"
+    },
+    "away_stats": {
+      "played": 23,
+      "points": 38,
+      "goals_for": 40,
+      "goals_against": 35,
+      "recent_form": "WLWDW"
+    },
+    "h2h_last_5": [
+      "Villarreal Win",
+      "Draw",
+      "Getafe Win",
+      "Villarreal Win",
+      "Draw"
+    ],
+    "analysis_note": "🟡 '잠수함' 비야레알의 공격력 우세",
+    "key_factors": [
+      "⚔️ 창과 방패: 비야레알의 화력(40골) vs 헤타페의 늪축구.",
+      "📈 비야레알 상승세: 최근 5경기 3승으로 챔스권 추격 중.",
+      "🛡 헤타페의 거친 수비: 경고 누적이나 퇴장 변수가 있을 수 있음."
+    ]
+  },
+  {
+    "league": "라리가",
+    "home_team": "에스파뇰",
+    "away_team": "셀타 비고",
+    "date": "2026-02-14",
+    "time": "14:00",
+    "home_stats": {
+      "played": 23,
+      "points": 22,
+      "goals_for": 24,
+      "goals_against": 38,
+      "recent_form": "LLWDL"
+    },
+    "away_stats": {
+      "played": 23,
+      "points": 27,
+      "goals_for": 30,
+      "goals_against": 32,
+      "recent_form": "WLDDL"
+    },
+    "h2h_last_5": [
+      "Celta Win",
+      "Draw",
+      "Espanyol Win",
+      "Draw",
+      "Celta Win"
+    ],
+    "analysis_note": "🐦 강등권 탈출을 위한 혈투. 무승부 가능성.",
+    "key_factors": [
+      "🔥 단두대 매치: 강등권 근처 두 팀의 처절한 생존 싸움.",
+      "📉 불안한 수비: 두 팀 모두 수비가 허술해 다득점 가능성 있음.",
+      "🏟 홈 이점: 에스파뇰 홈 팬들의 응원이 변수."
+    ]
+  },
+  {
+    "league": "라리가",
+    "home_team": "FC 바르셀로나",
+    "away_team": "라요 바예카노",
+    "date": "2026-02-15",
+    "time": "16:15",
+    "home_stats": {
+      "played": 23,
+      "points": 58,
+      "goals_for": 63,
+      "goals_against": 23,
+      "recent_form": "WWLWW"
+    },
+    "away_stats": {
+      "played": 23,
+      "points": 24,
+      "goals_for": 22,
+      "goals_against": 35,
+      "recent_form": "LLWDL"
+    },
+    "h2h_last_5": [
+      "Barca Win",
+      "Draw",
+      "Rayo Win",
+      "Barca Win",
+      "Barca Win"
+    ],
+    "analysis_note": "🔵🔴 선두 질주, 바르사의 화력쇼 예상",
+    "key_factors": [
+      "⚽ 압도적 화력: 리그 최다 득점 팀 바르셀로나(63골)의 골 폭죽 예상.",
+      "🏟 캄프 누/몬주익: 홈에서의 점유율은 70%를 상회할 것.",
+      "📉 라요의 천적? 최근엔 바르사가 라요 징크스를 극복한 모습."
+    ]
+  },
+  {
+    "league": "라리가",
+    "home_team": "아틀레티코 마드리드",
+    "away_team": "오사수나",
+    "date": "2026-02-15",
+    "time": "18:30",
+    "home_stats": {
+      "played": 23,
+      "points": 45,
+      "goals_for": 38,
+      "goals_against": 18,
+      "recent_form": "DWDWW"
+    },
+    "away_stats": {
+      "played": 23,
+      "points": 29,
+      "goals_for": 25,
+      "goals_against": 32,
+      "recent_form": "WLLDD"
+    },
+    "h2h_last_5": [
+      "Atletico Win",
+      "Atletico Win",
+      "Atletico Win",
+      "Draw",
+      "Osasuna Win"
+    ],
+    "analysis_note": "🛡 질식 수비 아틀레티코, 무실점 승리 도전",
+    "key_factors": [
+      "🛡 철벽 방어: ATM은 리그 최소 실점 팀. 오사수나가 뚫기 버거움.",
+      "⚔️ 시메오네의 전술: 1골 차 리드를 끝까지 지키는 능력이 탁월.",
+      "📉 오사수나 원정 약세: 원정에서 득점력이 현저히 떨어짐."
+    ]
+  },
+  {
+    "league": "라리가",
+    "home_team": "아틀레틱 빌바오",
+    "away_team": "레가네스",
+    "date": "2026-02-15",
+    "time": "14:00",
+    "home_stats": {
+      "played": 23,
+      "points": 42,
+      "goals_for": 40,
+      "goals_against": 25,
+      "recent_form": "WLWDW"
+    },
+    "away_stats": {
+      "played": 23,
+      "points": 20,
+      "goals_for": 18,
+      "goals_against": 35,
+      "recent_form": "LLDLL"
+    },
+    "h2h_last_5": [
+      "Bilbao Win",
+      "Bilbao Win",
+      "Draw",
+      "Leganes Win",
+      "Bilbao Win"
+    ],
+    "analysis_note": "🦁 산 마메스의 사자들을 막을 수 없다",
+    "key_factors": [
+      "🏟 산 마메스 요새: 빌바오 홈은 원정 팀에게 가장 까다로운 곳 중 하나.",
+      "⚡ 니코 윌리엄스: 측면 스피드로 레가네스 수비를 유린할 것.",
+      "📉 레가네스의 한계: 하위권 전력으로 빌바오 원정은 무리."
+    ]
+  },
+  {
+    "league": "라리가",
+    "home_team": "발렌시아",
+    "away_team": "바야돌리드",
+    "date": "2026-02-15",
+    "time": "21:00",
+    "home_stats": {
+      "played": 23,
+      "points": 35,
+      "goals_for": 33,
+      "goals_against": 30,
+      "recent_form": "WLLDW"
+    },
+    "away_stats": {
+      "played": 23,
+      "points": 21,
+      "goals_for": 20,
+      "goals_against": 40,
+      "recent_form": "LLLLL"
+    },
+    "h2h_last_5": [
+      "Valencia Win",
+      "Draw",
+      "Valladolid Win",
+      "Valencia Win",
+      "Valencia Win"
+    ],
+    "analysis_note": "🦇 발렌시아의 홈 경기력 우세",
+    "key_factors": [
+      "🏟 메스타야의 함성: 홈 팬들의 응원이 발렌시아 어린 선수들에게 큰 힘.",
+      "📉 바야돌리드 5연패: 팀 분위기가 최악으로 치닫고 있음.",
+      "💪 영건들의 활약: 발렌시아 유스 출신들의 활동량이 압도적."
+    ]
+  },
+  {
+    "league": "라리가",
+    "home_team": "베티스",
+    "away_team": "마요르카",
+    "date": "2026-02-15",
+    "time": "12:00",
+    "home_stats": {
+      "played": 23,
+      "points": 38,
+      "goals_for": 36,
+      "goals_against": 28,
+      "recent_form": "WWLDD"
+    },
+    "away_stats": {
+      "played": 23,
+      "points": 28,
+      "goals_for": 25,
+      "goals_against": 30,
+      "recent_form": "DWLWL"
+    },
+    "h2h_last_5": [
+      "Betis Win",
+      "Mallorca Win",
+      "Draw",
+      "Betis Win",
+      "Draw"
+    ],
+    "analysis_note": "🎢 팽팽한 중상위권 싸움. 베티스 근소 우위.",
+    "key_factors": [
+      "🎨 이스코의 조율: 베티스 중원의 창의성이 경기 흐름을 주도할 것.",
+      "🛡 마요르카의 수비: 마요르카는 원정에서 수비적으로 나설 가능성 높음.",
+      "⚖️ 1골 차 승부: 대량 득점보다는 타이트한 경기 예상."
+    ]
+  },
+  {
+    "league": "라리가",
+    "home_team": "라스 팔마스",
+    "away_team": "지로나",
+    "date": "2026-02-13",
+    "time": "21:00",
+    "home_stats": {
+      "played": 23,
+      "points": 26,
+      "goals_for": 25,
+      "goals_against": 33,
+      "recent_form": "LDWDL"
+    },
+    "away_stats": {
+      "played": 23,
+      "points": 48,
+      "goals_for": 52,
+      "goals_against": 28,
+      "recent_form": "WWDWL"
+    },
+    "h2h_last_5": [
+      "Girona Win",
+      "Girona Win",
+      "Draw",
+      "Las Palmas Win",
+      "Girona Win"
+    ],
+    "analysis_note": "🛫 지로나의 원정 경기력 우세 예상",
+    "key_factors": [
+      "⚽ 지로나의 돌풍: 여전히 상위권을 유지하는 공격력(52골).",
+      "✈️ 먼 원정길: 라스 팔마스 원정은 멀지만, 전력 차이가 뚜렷함.",
+      "📉 라스 팔마스의 부진: 최근 승리를 챙기지 못하며 흐름이 끊김."
+    ]
+  },
+  {
+    "league": "분데스리가",
+    "home_team": "베르더 브레멘",
+    "away_team": "바이에른 뮌헨",
+    "date": "2026-02-14",
+    "time": "15:30",
+    "home_stats": {
+      "played": 21,
+      "points": 26,
+      "goals_for": 30,
+      "goals_against": 35,
+      "recent_form": "DLDWL"
+    },
+    "away_stats": {
+      "played": 21,
+      "points": 54,
+      "goals_for": 79,
+      "goals_against": 19,
+      "recent_form": "WWWWW"
+    },
+    "h2h_last_5": [
+      "Bayern Win",
+      "Bayern Win",
+      "Bayern Win",
+      "Bremen Win",
+      "Bayern Win"
+    ],
+    "analysis_note": "🚜 [실제 배정] 뮌헨의 파괴력, 브레멘을 덮치다",
+    "key_factors": [
+      "🚀 압도적 화력: 뮌헨은 경기당 3.7골이라는 비현실적인 득점력을 과시 중.",
+      "👑 케인 & 무시알라: 뮌헨 공격진의 폼이 절정.",
+      "📊 역사적 상성: 브레멘은 뮌헨 상대로 역사적으로 매우 약한 모습."
+    ]
+  },
+  {
+    "league": "분데스리가",
+    "home_team": "레버쿠젠",
+    "away_team": "장크트파울리",
+    "date": "2026-02-14",
+    "time": "15:30",
+    "home_stats": {
+      "played": 20,
+      "points": 45,
+      "goals_for": 50,
+      "goals_against": 20,
+      "recent_form": "WWWDW"
+    },
+    "away_stats": {
+      "played": 20,
+      "points": 18,
+      "goals_for": 22,
+      "goals_against": 38,
+      "recent_form": "DLLLL"
+    },
+    "h2h_last_5": [
+      "Leverkusen Win",
+      "Leverkusen Win",
+      "Draw",
+      "Leverkusen Win",
+      "StPauli Win"
+    ],
+    "analysis_note": "🦁 다윗과 골리앗: 디펜딩 챔피언 vs 승격팀",
+    "key_factors": [
+      "👑 체급 차이: 레버쿠젠은 우승 경쟁팀, 장크트파울리는 강등권.",
+      "🏰 바이 아레나: 레버쿠젠 홈에서의 점유율 축구는 막기 어려움.",
+      "⚽ 주포 비르츠: 비르츠의 플레이메이킹이 상대 밀집 수비를 깰 것."
+    ]
+  },
+  {
+    "league": "분데스리가",
+    "home_team": "프랑크푸르트",
+    "away_team": "묀헨글라트바흐",
+    "date": "2026-02-14",
+    "time": "15:30",
+    "home_stats": {
+      "played": 20,
+      "points": 35,
+      "goals_for": 38,
+      "goals_against": 30,
+      "recent_form": "WLDWD"
+    },
+    "away_stats": {
+      "played": 20,
+      "points": 28,
+      "goals_for": 35,
+      "goals_against": 35,
+      "recent_form": "DDLLW"
+    },
+    "h2h_last_5": [
+      "Frankfurt Win",
+      "Draw",
+      "Gladbach Win",
+      "Frankfurt Win",
+      "Draw"
+    ],
+    "analysis_note": "🦅 홈 강세 프랑크푸르트의 우세",
+    "key_factors": [
+      "🏟 홈 강세: 프랑크푸르트는 홈 팬들의 응원을 받을 때 경기력이 배가됨.",
+      "⚔️ 난타전 예상: 양 팀 모두 수비보다는 공격에 치중하는 스타일.",
+      "📉 글라트바흐 원정 기복: 원정에서 수비 집중력이 자주 흔들림."
+    ]
+  },
+  {
+    "league": "분데스리가",
+    "home_team": "호펜하임",
+    "away_team": "프라이부르크",
+    "date": "2026-02-14",
+    "time": "15:30",
+    "home_stats": {
+      "played": 20,
+      "points": 24,
+      "goals_for": 32,
+      "goals_against": 38,
+      "recent_form": "LLDWD"
+    },
+    "away_stats": {
+      "played": 20,
+      "points": 34,
+      "goals_for": 28,
+      "goals_against": 25,
+      "recent_form": "WWLDW"
+    },
+    "h2h_last_5": [
+      "Freiburg Win",
+      "Hoffenheim Win",
+      "Freiburg Win",
+      "Draw",
+      "Freiburg Win"
+    ],
+    "analysis_note": "🌲 수비 조직력의 프라이부르크, 원정 승리 노린다",
+    "key_factors": [
+      "🛡 끈적한 수비: 프라이부르크의 조직력은 리그 상위권.",
+      "📉 호펜하임 자동문: 호펜하임은 실점이 너무 많아 이기기 힘듬.",
+      "⚽ 세트피스 위협: 프라이부르크의 세트피스 한 방을 주의해야 함."
+    ]
+  },
+  {
+    "league": "분데스리가",
+    "home_team": "도르트문트",
+    "away_team": "마인츠 05",
+    "date": "2026-02-14",
+    "time": "04:30",
+    "home_stats": {
+      "played": 21,
+      "points": 48,
+      "goals_for": 43,
+      "goals_against": 20,
+      "recent_form": "WWWDW"
+    },
+    "away_stats": {
+      "played": 21,
+      "points": 20,
+      "goals_for": 22,
+      "goals_against": 38,
+      "recent_form": "LLDDL"
+    },
+    "h2h_last_5": [
+      "Dortmund Win",
+      "Draw",
+      "Dortmund Win",
+      "Mainz Win",
+      "Dortmund Win"
+    ],
+    "analysis_note": "🐝 도르트문트의 홈 승리가 너무나 유력",
+    "key_factors": [
+      "🏟 옐로우 월: 지그날 이두나 파크의 압도적인 분위기.",
+      "📉 마인츠의 위기: 강등권 싸움 중인 마인츠의 최근 경기력은 최악.",
+      "⚔️ 전력 차이: 모든 포지션에서 도르트문트가 압도."
+    ]
+  },
+  {
+    "league": "분데스리가",
+    "home_team": "라이프치히",
+    "away_team": "하이덴하임",
+    "date": "2026-02-15",
+    "time": "15:30",
+    "home_stats": {
+      "played": 21,
+      "points": 42,
+      "goals_for": 45,
+      "goals_against": 25,
+      "recent_form": "WWDLW"
+    },
+    "away_stats": {
+      "played": 21,
+      "points": 22,
+      "goals_for": 25,
+      "goals_against": 35,
+      "recent_form": "LDLLW"
+    },
+    "h2h_last_5": [
+      "Leipzig Win",
+      "Leipzig Win",
+      "Leipzig Win",
+      "Heidenheim Win",
+      "Draw"
+    ],
+    "analysis_note": "🐂 라이프치히의 화력 폭발 예상",
+    "key_factors": [
+      "🚀 빠른 역습: 라이프치히의 역습 속도를 하이덴하임 수비가 감당하기 힘듦.",
+      "💎 오펜다/시몬스: 공격진의 개인 기량이 월등함.",
+      "🏠 홈 강세: 라이프치히는 홈에서 약팀 상대로 자비가 없음."
+    ]
+  },
+  {
+    "league": "분데스리가",
+    "home_team": "슈투트가르트",
+    "away_team": "아우크스부르크",
+    "date": "2026-02-15",
+    "time": "17:30",
+    "home_stats": {
+      "played": 21,
+      "points": 40,
+      "goals_for": 48,
+      "goals_against": 30,
+      "recent_form": "WWDWL"
+    },
+    "away_stats": {
+      "played": 21,
+      "points": 23,
+      "goals_for": 28,
+      "goals_against": 40,
+      "recent_form": "LDLDW"
+    },
+    "h2h_last_5": [
+      "Stuttgart Win",
+      "Augsburg Win",
+      "Stuttgart Win",
+      "Draw",
+      "Stuttgart Win"
+    ],
+    "analysis_note": "🏎 슈투트가르트의 홈 득점력",
+    "key_factors": [
+      "⚽ 닥공 축구: 슈투트가르트는 이번 시즌 화끈한 공격 축구를 구사.",
+      "🛡 아우크스부르크 수비 불안: 원정 40실점은 수비가 붕괴되었다는 증거.",
+      "📈 상위권 유지 동기: 챔스 티켓을 위해 홈 승리가 필수."
+    ]
+  },
+  {
+    "league": "분데스리가",
+    "home_team": "보훔",
+    "away_team": "우니온 베를린",
+    "date": "2026-02-15",
+    "time": "19:30",
+    "home_stats": {
+      "played": 21,
+      "points": 18,
+      "goals_for": 20,
+      "goals_against": 45,
+      "recent_form": "LLLDL"
+    },
+    "away_stats": {
+      "played": 21,
+      "points": 32,
+      "goals_for": 25,
+      "goals_against": 25,
+      "recent_form": "WDDWL"
+    },
+    "h2h_last_5": [
+      "Union Win",
+      "Draw",
+      "Bochum Win",
+      "Union Win",
+      "Union Win"
+    ],
+    "analysis_note": "🛠 우니온 베를린의 짠물 수비와 역습",
+    "key_factors": [
+      "🛡 질식 수비: 우니온 베를린의 수비 조직력은 보훔의 빈공을 막기에 충분.",
+      "📉 보훔의 몰락: 최근 연패를 거듭하며 강등권 탈출 희망이 옅어짐.",
+      "⚔️ 피지컬 싸움: 거친 몸싸움이 예상되나 우니온이 더 노련함."
+    ]
+  },
+  {
+    "league": "분데스리가",
+    "home_team": "함부르크",
+    "away_team": "홀슈타인 킬",
+    "date": "2026-02-15",
+    "time": "13:30",
+    "home_stats": {
+      "played": 21,
+      "points": 24,
+      "goals_for": 28,
+      "goals_against": 33,
+      "recent_form": "DLWDL"
+    },
+    "away_stats": {
+      "played": 21,
+      "points": 19,
+      "goals_for": 22,
+      "goals_against": 40,
+      "recent_form": "LLLDD"
+    },
+    "h2h_last_5": [
+      "Hamburg Win",
+      "Kiel Win",
+      "Draw",
+      "Hamburg Win",
+      "Draw"
+    ],
+    "analysis_note": "⛵ 승격팀 간의 대결. 함부르크 우세.",
+    "key_factors": [
+      "⚔️ 북독일 더비: 지리적으로 가까운 두 팀의 자존심 대결.",
+      "🏠 함부르크 홈 버프: 5만 관중의 응원은 킬 선수들을 위축시킬 것.",
+      "📉 킬의 수비: 홀슈타인 킬은 리그 최다 실점 수준의 수비 불안."
     ]
   },
   {
@@ -470,11 +1352,11 @@
       "Hyundai Win",
       "Road Win"
     ],
-    "analysis_note": "🏐 [V리그 최강] 현대건설, 셧아웃 승리 유력",
+    "analysis_note": "🏐 현대건설의 1위 독주",
     "key_factors": [
-      "👑 압도적 1위: 승점 65점 vs 18점. 설명이 필요 없는 전력 차이.",
-      "🛡 높이의 현대건설: 양효진을 비롯한 블로킹 라인이 도로공사 공격을 원천 봉쇄할 것.",
-      "📉 도로공사 최악의 부진: 최근 연패 수렁에서 빠져나올 기미가 보이지 않음."
+      "👑 리그 지배자: 공수 모든 지표에서 현대건설이 압도적 1위.",
+      "🛡 통곡의 벽: 양효진의 높이는 도로공사 공격수들에게 악몽.",
+      "📉 도로공사 의욕 상실: 플레이오프 탈락이 확정적이라 동기부여 떨어짐."
     ]
   },
   {
@@ -504,11 +1386,11 @@
       "Heungkuk Win",
       "GS Win"
     ],
-    "analysis_note": "🏐 [빅매치] 2위 흥국생명 vs 3위 GS칼텍스",
+    "analysis_note": "🏐 2위와 3위의 빅매치",
     "key_factors": [
-      "👑 배구 여제 김연경: 큰 경기에 강한 흥국생명의 에이스 존재감.",
-      "⚔️ 서브 싸움: GS칼텍스의 강서브가 흥국생명 리시브 라인을 얼마나 흔드느냐가 관건.",
-      "🏟 홈 이점: 인천 삼산체육관의 뜨거운 응원 열기가 홈팀에 큰 힘."
+      "👑 김연경의 존재감: 큰 경기일수록 빛나는 에이스의 품격.",
+      "⚔️ 강서브 대결: 리시브가 흔들리는 팀이 무너질 것.",
+      "🏟 만원 관중: 인천 삼산체육관의 열광적인 응원이 흥국생명에 힘."
     ]
   }
 ]

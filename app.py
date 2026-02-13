@@ -3,6 +3,8 @@ import json
 import math
 import pandas as pd
 import altair as alt
+import base64
+import os
 
 # -----------------------------------------------------------------------------
 # 1. Page Configuration
@@ -15,10 +17,43 @@ st.set_page_config(
 )
 
 # -----------------------------------------------------------------------------
-# 2. Theme Management
+# 2. Background Image Logic
+# -----------------------------------------------------------------------------
+def get_base64_of_bin_file(bin_file):
+    with open(bin_file, 'rb') as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
+
+def set_png_as_page_bg(png_file):
+    bin_str = get_base64_of_bin_file(png_file)
+    page_bg_img = f'''
+    <style>
+    [data-testid="stAppViewContainer"] {{
+        background-image: url("data:image/png;base64,{bin_str}");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }}
+    </style>
+    '''
+    st.markdown(page_bg_img, unsafe_allow_html=True)
+
+# Check for background image (jpg or png)
+bg_file = None
+if os.path.exists('background.jpg'):
+    bg_file = 'background.jpg'
+elif os.path.exists('background.png'):
+    bg_file = 'background.png'
+
+if bg_file:
+    set_png_as_page_bg(bg_file)
+
+# -----------------------------------------------------------------------------
+# 3. Theme Management
 # -----------------------------------------------------------------------------
 if 'theme' not in st.session_state:
-    st.session_state.theme = 'dark' # Default to Dark Mode
+    st.session_state.theme = 'dark' # Default
 
 def toggle_theme():
     if st.session_state.theme == 'light':
@@ -26,20 +61,25 @@ def toggle_theme():
     else:
         st.session_state.theme = 'light'
 
-# Theme CSS Definitions
+# Theme CSS Definitions (Updated for Background Image Compatibility)
+# We use rgba() for backgrounds to let the image show through slightly
+
 dark_css = """
 <style>
-    [data-testid="stAppViewContainer"] { background-color: #1e1e1e; }
+    /* Only set color if no background image */
+    /* [data-testid="stAppViewContainer"] is handled by bg function if file exists */
+    
     .stMarkdown, .stMarkdown p, h1, h2, h3, h4, h5, h6, span, div { color: #ecf0f1 !important; }
     
     .match-card {
-        background-color: #2d2d2d;
+        background-color: rgba(45, 45, 45, 0.9); /* Semi-transparent */
         border-radius: 12px;
         padding: 20px;
         margin-bottom: 5px;
         box-shadow: 0 4px 6px rgba(0,0,0,0.3);
         border: 1px solid #444;
         color: #ecf0f1;
+        backdrop-filter: blur(5px); /* Glass effect */
     }
     
     span.league-badge {
@@ -51,25 +91,25 @@ dark_css = """
     .team-name { color: #ffffff !important; }
     
     .score-pred {
-        background-color: #3d3d3d;
+        background-color: rgba(61, 61, 61, 0.8);
         color: #ecf0f1 !important;
         border: 1px solid #555;
     }
     
     .streamlit-expanderHeader {
-        background-color: #3d3d3d !important;
+        background-color: rgba(61, 61, 61, 0.9) !important;
         color: #ecf0f1 !important;
         border: 1px solid #555;
     }
     .streamlit-expanderContent {
-        background-color: #2d2d2d !important;
+        background-color: rgba(45, 45, 45, 0.9) !important;
         color: #ecf0f1 !important;
         border: 1px solid #555;
         border-top: none;
     }
     
     div[data-testid="stPills"] button {
-        background-color: #2d2d2d !important;
+        background-color: rgba(45, 45, 45, 0.8) !important;
         color: #ecf0f1 !important;
         border: 1px solid #555 !important;
     }
@@ -79,10 +119,11 @@ dark_css = """
         border: 1px solid #3498db !important;
     }
     
-    /* Global Overrides */
-    .stButton button {
-        border-color: #555;
-        color: white;
+    /* Overlay for better text readability if no card */
+    .block-container {
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+        padding: 2rem;
     }
     
 </style>
@@ -90,17 +131,17 @@ dark_css = """
 
 light_css = """
 <style>
-    [data-testid="stAppViewContainer"] { background-color: #f8f9fa; }
     .stMarkdown, .stMarkdown p, h1, h2, h3, h4, h5, h6 { color: #2c3e50 !important; }
     
     .match-card {
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.9);
         border-radius: 12px;
         padding: 20px;
         margin-bottom: 5px;
         box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         border: 1px solid #eee;
         color: #2c3e50;
+        backdrop-filter: blur(5px);
     }
     
     span.league-badge {
@@ -112,23 +153,23 @@ light_css = """
     .team-name { color: #2c3e50 !important; }
     
     .score-pred {
-        background-color: #f1f3f5;
+        background-color: rgba(241, 243, 245, 0.8);
         color: #495057 !important;
     }
     
     .streamlit-expanderHeader {
-        background-color: #e9ecef !important;
+        background-color: rgba(233, 236, 239, 0.9) !important;
         color: #2c3e50 !important;
         border: 1px solid #dee2e6;
     }
     .streamlit-expanderContent {
-        background-color: #ffffff !important;
+        background-color: rgba(255, 255, 255, 0.9) !important;
         color: #2c3e50 !important;
         border: 1px solid #dee2e6;
         border-top: none;
     }
     div[data-testid="stPills"] button {
-        background-color: white !important;
+        background-color: rgba(255, 255, 255, 0.8) !important;
         color: #2c3e50 !important;
         border: 1px solid #ddd !important;
     }
@@ -140,7 +181,7 @@ light_css = """
 </style>
 """
 
-# Shared CSS (Badges colors stay same)
+# Shared CSS
 common_css = """
 <style>
     span.league-badge {
@@ -177,22 +218,35 @@ common_css = """
     .rec-home { background-color: #e74c3c; }
     .rec-away { background-color: #3498db; }
     .rec-draw { background-color: #95a5a6; }
-    .block-container { padding-top: 2rem; }
+    
+    /* Global Button Override */
+    .stButton button {
+        border-color: #555;
+        color: white;
+    }
 </style>
 """
 
 # Inject CSS based on state
 st.markdown(common_css, unsafe_allow_html=True)
+
+# If no bg file, set default background color in CSS
+if not bg_file:
+    if st.session_state.theme == 'dark':
+        st.markdown("""<style>[data-testid="stAppViewContainer"] { background-color: #1e1e1e; }</style>""", unsafe_allow_html=True)
+    else:
+        st.markdown("""<style>[data-testid="stAppViewContainer"] { background-color: #f8f9fa; }</style>""", unsafe_allow_html=True)
+
 if st.session_state.theme == 'dark':
     st.markdown(dark_css, unsafe_allow_html=True)
 else:
     st.markdown(light_css, unsafe_allow_html=True)
 
 # -----------------------------------------------------------------------------
-# 3. Prediction Logic
+# 4. Prediction Logic
 # -----------------------------------------------------------------------------
 def predict_match(match):
-    # (Same logic as before...)
+    # (Same logic...)
     home_name = match['home_team']
     away_name = match['away_team']
     is_volleyball = "V-리그" in match['league']
@@ -270,7 +324,7 @@ def load_data():
         return []
 
 # -----------------------------------------------------------------------------
-# 4. Main UI
+# 5. Main UI
 # -----------------------------------------------------------------------------
 fixtures = load_data()
 
