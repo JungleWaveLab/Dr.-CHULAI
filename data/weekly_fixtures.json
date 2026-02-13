@@ -1,0 +1,437 @@
+[
+  {
+    "league": "세리에 A",
+    "home_team": "인테르 밀란",
+    "away_team": "유벤투스",
+    "date": "2026-02-14",
+    "time": "19:45",
+    "home_stats": {
+      "played": 24,
+      "points": 58,
+      "goals_for": 65,
+      "goals_against": 27,
+      "recent_form": "WWWLW"
+    },
+    "away_stats": {
+      "played": 24,
+      "points": 46,
+      "goals_for": 45,
+      "goals_against": 25,
+      "recent_form": "DWDWW"
+    },
+    "h2h_last_5": [
+      "Inter Win",
+      "Draw",
+      "Inter Win",
+      "Draw",
+      "Juve Win"
+    ],
+    "analysis_note": "1위 vs 4위. 인테르의 홈 강세."
+  },
+  {
+    "league": "세리에 A",
+    "home_team": "라치오",
+    "away_team": "아탈란타",
+    "date": "2026-02-14",
+    "time": "17:00",
+    "home_stats": {
+      "played": 24,
+      "points": 33,
+      "goals_for": 35,
+      "goals_against": 30,
+      "recent_form": "LDWLL"
+    },
+    "away_stats": {
+      "played": 24,
+      "points": 39,
+      "goals_for": 40,
+      "goals_against": 28,
+      "recent_form": "WWLDW"
+    },
+    "h2h_last_5": [
+      "Atalanta Win",
+      "Lazio Win",
+      "Draw",
+      "Atalanta Win",
+      "Draw"
+    ],
+    "analysis_note": "상위권 도약 경쟁."
+  },
+  {
+    "league": "세리에 A",
+    "home_team": "나폴리",
+    "away_team": "AS 로마",
+    "date": "2026-02-15",
+    "time": "20:45",
+    "home_stats": {
+      "played": 24,
+      "points": 49,
+      "goals_for": 48,
+      "goals_against": 22,
+      "recent_form": "WWDLW"
+    },
+    "away_stats": {
+      "played": 24,
+      "points": 46,
+      "goals_for": 44,
+      "goals_against": 29,
+      "recent_form": "WDWWL"
+    },
+    "h2h_last_5": [
+      "Napoli Win",
+      "Draw",
+      "Roma Win",
+      "Napoli Win",
+      "Draw"
+    ],
+    "analysis_note": "나폴리의 홈 이점 예상."
+  },
+  {
+    "league": "세리에 A",
+    "home_team": "AC 밀란",
+    "away_team": "베로나",
+    "date": "2026-02-15",
+    "time": "15:00",
+    "home_stats": {
+      "played": 23,
+      "points": 50,
+      "goals_for": 52,
+      "goals_against": 25,
+      "recent_form": "WWWWW"
+    },
+    "away_stats": {
+      "played": 23,
+      "points": 19,
+      "goals_for": 20,
+      "goals_against": 40,
+      "recent_form": "LLDDL"
+    },
+    "h2h_last_5": [
+      "Milan Win",
+      "Milan Win",
+      "Milan Win",
+      "Draw",
+      "Milan Win"
+    ],
+    "analysis_note": "AC 밀란의 압도적 우세."
+  },
+  {
+    "league": "라리가",
+    "home_team": "레알 마드리드",
+    "away_team": "레알 소시에다드",
+    "date": "2026-02-14",
+    "time": "21:00",
+    "home_stats": {
+      "played": 23,
+      "points": 57,
+      "goals_for": 49,
+      "goals_against": 18,
+      "recent_form": "WWWDW"
+    },
+    "away_stats": {
+      "played": 23,
+      "points": 34,
+      "goals_for": 28,
+      "goals_against": 30,
+      "recent_form": "LDWDL"
+    },
+    "h2h_last_5": [
+      "Real Win",
+      "Real Win",
+      "Sociedad Win",
+      "Real Win",
+      "Draw"
+    ],
+    "analysis_note": "레알 마드리드 승리 유력."
+  },
+  {
+    "league": "라리가",
+    "home_team": "FC 바르셀로나",
+    "away_team": "라요 바예카노",
+    "date": "2026-02-15",
+    "time": "16:15",
+    "home_stats": {
+      "played": 23,
+      "points": 58,
+      "goals_for": 63,
+      "goals_against": 23,
+      "recent_form": "WWLWW"
+    },
+    "away_stats": {
+      "played": 23,
+      "points": 24,
+      "goals_for": 22,
+      "goals_against": 35,
+      "recent_form": "LLWDL"
+    },
+    "h2h_last_5": [
+      "Barca Win",
+      "Draw",
+      "Rayo Win",
+      "Barca Win",
+      "Barca Win"
+    ],
+    "analysis_note": "선두 바르셀로나의 무난한 승리."
+  },
+  {
+    "league": "라리가",
+    "home_team": "아틀레티코 마드리드",
+    "away_team": "오사수나",
+    "date": "2026-02-15",
+    "time": "18:30",
+    "home_stats": {
+      "played": 23,
+      "points": 45,
+      "goals_for": 38,
+      "goals_against": 18,
+      "recent_form": "DWDWW"
+    },
+    "away_stats": {
+      "played": 23,
+      "points": 29,
+      "goals_for": 25,
+      "goals_against": 32,
+      "recent_form": "WLLDD"
+    },
+    "h2h_last_5": [
+      "Atletico Win",
+      "Atletico Win",
+      "Atletico Win",
+      "Draw",
+      "Osasuna Win"
+    ],
+    "analysis_note": "아틀레티코의 짠물 수비 예상."
+  },
+  {
+    "league": "분데스리가",
+    "home_team": "베르더 브레멘",
+    "away_team": "바이에른 뮌헨",
+    "date": "2026-02-14",
+    "time": "20:30",
+    "home_stats": {
+      "played": 21,
+      "points": 26,
+      "goals_for": 30,
+      "goals_against": 35,
+      "recent_form": "DLDWL"
+    },
+    "away_stats": {
+      "played": 21,
+      "points": 54,
+      "goals_for": 79,
+      "goals_against": 19,
+      "recent_form": "WWWWW"
+    },
+    "h2h_last_5": [
+      "Bayern Win",
+      "Bayern Win",
+      "Bayern Win",
+      "Bremen Win",
+      "Bayern Win"
+    ],
+    "analysis_note": "뮌헨의 다득점 승리 예상."
+  },
+  {
+    "league": "분데스리가",
+    "home_team": "도르트문트",
+    "away_team": "마인츠 05",
+    "date": "2026-02-14",
+    "time": "04:30",
+    "home_stats": {
+      "played": 21,
+      "points": 48,
+      "goals_for": 43,
+      "goals_against": 20,
+      "recent_form": "WWWDW"
+    },
+    "away_stats": {
+      "played": 21,
+      "points": 20,
+      "goals_for": 22,
+      "goals_against": 38,
+      "recent_form": "LLDDL"
+    },
+    "h2h_last_5": [
+      "Dortmund Win",
+      "Draw",
+      "Dortmund Win",
+      "Mainz Win",
+      "Dortmund Win"
+    ],
+    "analysis_note": "도르트문트 승리 유력."
+  },
+  {
+    "league": "분데스리가",
+    "home_team": "레버쿠젠",
+    "away_team": "볼프스부르크",
+    "date": "2026-02-14",
+    "time": "23:30",
+    "home_stats": {
+      "played": 20,
+      "points": 36,
+      "goals_for": 39,
+      "goals_against": 27,
+      "recent_form": "WLDWD"
+    },
+    "away_stats": {
+      "played": 20,
+      "points": 25,
+      "goals_for": 28,
+      "goals_against": 33,
+      "recent_form": "DDLLW"
+    },
+    "h2h_last_5": [
+      "Leverkusen Win",
+      "Draw",
+      "Leverkusen Win",
+      "Draw",
+      "Wolfsburg Win"
+    ],
+    "analysis_note": "레버쿠젠의 우세."
+  },
+  {
+    "league": "프리미어리그",
+    "home_team": "맨체스터 시티",
+    "away_team": "에버튼",
+    "date": "2026-02-14",
+    "time": "21:30",
+    "home_stats": {
+      "played": 24,
+      "points": 55,
+      "goals_for": 60,
+      "goals_against": 22,
+      "recent_form": "WWWWW"
+    },
+    "away_stats": {
+      "played": 24,
+      "points": 20,
+      "goals_for": 24,
+      "goals_against": 45,
+      "recent_form": "LLDLL"
+    },
+    "h2h_last_5": [
+      "City Win",
+      "City Win",
+      "Draw",
+      "City Win",
+      "City Win"
+    ],
+    "analysis_note": "맨시티의 압승 예상."
+  },
+  {
+    "league": "프리미어리그",
+    "home_team": "아스널",
+    "away_team": "레스터 시티",
+    "date": "2026-02-14",
+    "time": "23:00",
+    "home_stats": {
+      "played": 24,
+      "points": 52,
+      "goals_for": 55,
+      "goals_against": 20,
+      "recent_form": "WDWWW"
+    },
+    "away_stats": {
+      "played": 24,
+      "points": 25,
+      "goals_for": 30,
+      "goals_against": 42,
+      "recent_form": "LWLDL"
+    },
+    "h2h_last_5": [
+      "Arsenal Win",
+      "Arsenal Win",
+      "Arsenal Win",
+      "Leicester Win",
+      "Arsenal Win"
+    ],
+    "analysis_note": "아스널의 우세."
+  },
+  {
+    "league": "프리미어리그",
+    "home_team": "리버풀",
+    "away_team": "울버햄튼",
+    "date": "2026-02-15",
+    "time": "01:30",
+    "home_stats": {
+      "played": 24,
+      "points": 50,
+      "goals_for": 48,
+      "goals_against": 25,
+      "recent_form": "DWWWL"
+    },
+    "away_stats": {
+      "played": 24,
+      "points": 32,
+      "goals_for": 35,
+      "goals_against": 38,
+      "recent_form": "WLDLW"
+    },
+    "h2h_last_5": [
+      "Liverpool Win",
+      "Liverpool Win",
+      "Wolves Win",
+      "Liverpool Win",
+      "Liverpool Win"
+    ],
+    "analysis_note": "리버풀의 홈 강세."
+  },
+  {
+    "league": "V-리그(여)",
+    "home_team": "현대건설",
+    "away_team": "한국도로공사",
+    "date": "2026-02-13",
+    "time": "19:00",
+    "home_stats": {
+      "played": 25,
+      "points": 65,
+      "goals_for": 70,
+      "goals_against": 20,
+      "recent_form": "WWWWW"
+    },
+    "away_stats": {
+      "played": 25,
+      "points": 18,
+      "goals_for": 22,
+      "goals_against": 68,
+      "recent_form": "LLLLL"
+    },
+    "h2h_last_5": [
+      "Hyundai Win",
+      "Hyundai Win",
+      "Hyundai Win",
+      "Hyundai Win",
+      "Road Win"
+    ],
+    "analysis_note": "현대건설의 압도적 우위."
+  },
+  {
+    "league": "V-리그(여)",
+    "home_team": "흥국생명",
+    "away_team": "GS칼텍스",
+    "date": "2026-02-17",
+    "time": "19:00",
+    "home_stats": {
+      "played": 25,
+      "points": 60,
+      "goals_for": 65,
+      "goals_against": 25,
+      "recent_form": "WWLWW"
+    },
+    "away_stats": {
+      "played": 25,
+      "points": 45,
+      "goals_for": 50,
+      "goals_against": 40,
+      "recent_form": "WLWLW"
+    },
+    "h2h_last_5": [
+      "Heungkuk Win",
+      "GS Win",
+      "Heungkuk Win",
+      "Heungkuk Win",
+      "GS Win"
+    ],
+    "analysis_note": "2위와 3위의 대결."
+  }
+]
