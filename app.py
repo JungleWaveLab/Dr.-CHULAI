@@ -1,33 +1,198 @@
 import streamlit as st
 import json
 import math
-import os
-import sys
+import pandas as pd
+import altair as alt
 
-# Page Config
+# -----------------------------------------------------------------------------
+# 1. Page Configuration
+# -----------------------------------------------------------------------------
 st.set_page_config(
-    page_title="토토 분석기 AI",
+    page_title="토토 분석기 AI Pro",
     page_icon="⚽",
-    layout="wide",
-    initial_sidebar_state="expanded"
+    layout="centered",
+    initial_sidebar_state="collapsed"
 )
 
-# Custom CSS for styling
-st.markdown("""
+# -----------------------------------------------------------------------------
+# 2. Theme Management
+# -----------------------------------------------------------------------------
+if 'theme' not in st.session_state:
+    st.session_state.theme = 'dark' # Default to Dark Mode
+
+def toggle_theme():
+    if st.session_state.theme == 'light':
+        st.session_state.theme = 'dark'
+    else:
+        st.session_state.theme = 'light'
+
+# Theme CSS Definitions
+dark_css = """
 <style>
-    .big-font { font-size: 24px !important; font-weight: bold; }
-    .vs-badge { background-color: #f0f2f6; padding: 5px 10px; border-radius: 10px; font-weight: bold; color: #555; }
-    .rec-card { padding: 10px; border-radius: 5px; color: white; text-align: center; font-weight: bold; }
+    [data-testid="stAppViewContainer"] { background-color: #1e1e1e; }
+    .stMarkdown, .stMarkdown p, h1, h2, h3, h4, h5, h6, span, div { color: #ecf0f1 !important; }
+    
+    .match-card {
+        background-color: #2d2d2d;
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 5px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        border: 1px solid #444;
+        color: #ecf0f1;
+    }
+    
+    span.league-badge {
+        background-color: #34495e !important;
+        color: #ffffff !important;
+        border: 1px solid #555;
+    }
+    
+    .team-name { color: #ffffff !important; }
+    
+    .score-pred {
+        background-color: #3d3d3d;
+        color: #ecf0f1 !important;
+        border: 1px solid #555;
+    }
+    
+    .streamlit-expanderHeader {
+        background-color: #3d3d3d !important;
+        color: #ecf0f1 !important;
+        border: 1px solid #555;
+    }
+    .streamlit-expanderContent {
+        background-color: #2d2d2d !important;
+        color: #ecf0f1 !important;
+        border: 1px solid #555;
+        border-top: none;
+    }
+    
+    div[data-testid="stPills"] button {
+        background-color: #2d2d2d !important;
+        color: #ecf0f1 !important;
+        border: 1px solid #555 !important;
+    }
+    div[data-testid="stPills"] button[aria-selected="true"] {
+        background-color: #3498db !important;
+        color: white !important;
+        border: 1px solid #3498db !important;
+    }
+    
+    /* Global Overrides */
+    .stButton button {
+        border-color: #555;
+        color: white;
+    }
+    
+</style>
+"""
+
+light_css = """
+<style>
+    [data-testid="stAppViewContainer"] { background-color: #f8f9fa; }
+    .stMarkdown, .stMarkdown p, h1, h2, h3, h4, h5, h6 { color: #2c3e50 !important; }
+    
+    .match-card {
+        background-color: white;
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 5px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        border: 1px solid #eee;
+        color: #2c3e50;
+    }
+    
+    span.league-badge {
+        background-color: #2c3e50 !important;
+        color: #ffffff !important;
+        border: 1px solid #2c3e50;
+    }
+    
+    .team-name { color: #2c3e50 !important; }
+    
+    .score-pred {
+        background-color: #f1f3f5;
+        color: #495057 !important;
+    }
+    
+    .streamlit-expanderHeader {
+        background-color: #e9ecef !important;
+        color: #2c3e50 !important;
+        border: 1px solid #dee2e6;
+    }
+    .streamlit-expanderContent {
+        background-color: #ffffff !important;
+        color: #2c3e50 !important;
+        border: 1px solid #dee2e6;
+        border-top: none;
+    }
+    div[data-testid="stPills"] button {
+        background-color: white !important;
+        color: #2c3e50 !important;
+        border: 1px solid #ddd !important;
+    }
+    div[data-testid="stPills"] button[aria-selected="true"] {
+        background-color: #2c3e50 !important;
+        color: white !important;
+        border: 1px solid #2c3e50 !important;
+    }
+</style>
+"""
+
+# Shared CSS (Badges colors stay same)
+common_css = """
+<style>
+    span.league-badge {
+        padding: 4px 12px;
+        border-radius: 12px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+    .team-name {
+        font-size: 1.3rem; 
+        font-weight: 800; 
+        margin-bottom: 5px;
+    }
+    .score-pred {
+        padding: 10px;
+        border-radius: 8px;
+        font-weight: bold;
+        text-align: center;
+        margin: 15px 0;
+        font-size: 1.1rem;
+    }
+    div.rec-badge {
+        padding: 8px 12px;
+        border-radius: 6px;
+        color: #ffffff !important; 
+        font-weight: bold;
+        text-align: center;
+        display: block;
+        margin-top: 10px;
+        font-size: 0.95rem;
+    }
     .rec-home { background-color: #e74c3c; }
     .rec-away { background-color: #3498db; }
     .rec-draw { background-color: #95a5a6; }
-    .analysis-box { background-color: #fef9e7; padding: 15px; border-radius: 5px; border-left: 5px solid #f1c40f; margin-top: 10px; }
-    .stProgress > div > div > div > div { background-image: linear-gradient(to right, #e74c3c, #95a5a6, #3498db); }
+    .block-container { padding-top: 2rem; }
 </style>
-""", unsafe_allow_html=True)
+"""
 
-# Prediction Logic (Same as before)
+# Inject CSS based on state
+st.markdown(common_css, unsafe_allow_html=True)
+if st.session_state.theme == 'dark':
+    st.markdown(dark_css, unsafe_allow_html=True)
+else:
+    st.markdown(light_css, unsafe_allow_html=True)
+
+# -----------------------------------------------------------------------------
+# 3. Prediction Logic
+# -----------------------------------------------------------------------------
 def predict_match(match):
+    # (Same logic as before...)
     home_name = match['home_team']
     away_name = match['away_team']
     is_volleyball = "V-리그" in match['league']
@@ -38,9 +203,8 @@ def predict_match(match):
     h_gd = match['home_stats']['goals_for'] - match['home_stats']['goals_against']
     a_gd = match['away_stats']['goals_for'] - match['away_stats']['goals_against']
     
-    rating_home = 1500 + (h_pts - avg_pts) * 10 + (h_gd * 4)
+    rating_home = 1500 + (h_pts - avg_pts) * 10 + (h_gd * 4) + 100
     rating_away = 1500 + (a_pts - avg_pts) * 10 + (a_gd * 4)
-    rating_home += 100 
     
     def calc_form(form_str):
         score = 0
@@ -75,7 +239,6 @@ def predict_match(match):
     prob_draw /= total
     final_away_win /= total
 
-    # Score Prediction
     if is_volleyball:
         if final_home_win > 0.8: score_h, score_a = 3, 0
         elif final_home_win > 0.6: score_h, score_a = 3, 1
@@ -87,25 +250,17 @@ def predict_match(match):
         home_attack = match['home_stats']['goals_for'] / match['home_stats']['played']
         away_defense = match['away_stats']['goals_against'] / match['away_stats']['played'] 
         if match['away_stats']['played'] == 0: away_defense = 1 
-        
         away_attack = match['away_stats']['goals_for'] / match['away_stats']['played']
         home_defense = match['home_stats']['goals_against'] / match['home_stats']['played']
         lg_avg = 1.4
-        
-        exp_h_goals = (home_attack / lg_avg) * (away_defense / lg_avg) * lg_avg * 1.15
-        exp_a_goals = (away_attack / lg_avg) * (home_defense / lg_avg) * lg_avg 
-        score_h, score_a = exp_h_goals, exp_a_goals
+        score_h = (home_attack / lg_avg) * (away_defense / lg_avg) * lg_avg * 1.15
+        score_a = (away_attack / lg_avg) * (home_defense / lg_avg) * lg_avg 
     
     return {
-        "home_win": final_home_win,
-        "draw": prob_draw,
-        "away_win": final_away_win,
-        "score_h": score_h,
-        "score_a": score_a,
-        "is_volleyball": is_volleyball
+        "home_win": final_home_win, "draw": prob_draw, "away_win": final_away_win,
+        "score_h": score_h, "score_a": score_a, "is_volleyball": is_volleyball
     }
 
-# Load Data
 @st.cache_data
 def load_data():
     try:
@@ -114,90 +269,105 @@ def load_data():
     except:
         return []
 
+# -----------------------------------------------------------------------------
+# 4. Main UI
+# -----------------------------------------------------------------------------
 fixtures = load_data()
 
-# Header
-st.title("⚽ 토토 분석기 AI (주간 리포트)")
-st.caption("2026년 2월 2주차 빅매치 심층 분석")
+# Header Layout
+col1, col2 = st.columns([5, 1])
+with col1:
+    st.title("🏆 토토 분석기 AI")
+    st.markdown("##### ⚡ 데이터 기반 승부 예측 리포트")
+with col2:
+    if st.session_state.theme == 'dark':
+        if st.button("🌞 라이트"):
+            toggle_theme()
+            st.rerun()
+    else:
+        if st.button("🌙 다크"):
+            toggle_theme()
+            st.rerun()
 
-# Sidebar Filters
-st.sidebar.header("🔍 필터 옵션")
-all_leagues = sorted(list(set([m['league'] for m in fixtures])))
-selected_leagues = st.sidebar.multiselect("리그 선택", all_leagues, default=all_leagues)
+leagues = sorted(list(set([m['league'] for m in fixtures])))
+selected_league = st.pills("리그 필터", ["전체"] + leagues, selection_mode="single", default="전체")
 
-st.sidebar.markdown("---")
-st.sidebar.info("이 분석기는 Elo Rating과 Poisson 분포 모델을 기반으로 승률을 계산합니다.")
+matches_to_show = fixtures if selected_league == "전체" else [m for m in fixtures if m['league'] == selected_league]
 
-# Main Content
-if not fixtures:
-    st.error("데이터 파일을 찾을 수 없습니다.")
-else:
-    # Filter matches
-    matches_to_show = [m for m in fixtures if m['league'] in selected_leagues]
+for m in matches_to_show:
+    pred = predict_match(m)
+    h_prob, d_prob, a_prob = pred['home_win']*100, pred['draw']*100, pred['away_win']*100
     
-    # Group by League
-    grouped = {}
-    for m in matches_to_show:
-        l = m['league']
-        if l not in grouped: grouped[l] = []
-        grouped[l].append(m)
-        
-    for league, matches in grouped.items():
-        st.subheader(f"🏆 {league}")
-        
-        for m in matches:
-            with st.container():
-                pred = predict_match(m)
-                
-                # Recommendation Logic
-                h_prob = pred['home_win'] * 100
-                d_prob = pred['draw'] * 100
-                a_prob = pred['away_win'] * 100
-                
-                rec_text = "박빙/무승부"
-                rec_bg = "rec-draw"
-                if h_prob > 60:
-                    rec_text = f"{m['home_team']} 승리 유력"
-                    rec_bg = "rec-home"
-                elif a_prob > 60:
-                    rec_text = f"{m['away_team']} 승리 유력"
-                    rec_bg = "rec-away"
-                elif h_prob > 45:
-                    rec_text = f"{m['home_team']} 우세"
-                    rec_bg = "rec-home"
-                elif a_prob > 45:
-                    rec_text = f"{m['away_team']} 우세"
-                    rec_bg = "rec-away"
+    rec_text = "박빙 / 무승부 예상"
+    rec_class = "rec-draw"
+    
+    if h_prob > 60:
+        rec_text = f"🔥 {m['home_team']} 승리 유력"
+        rec_class = "rec-home"
+    elif a_prob > 60:
+        rec_text = f"🔥 {m['away_team']} 승리 유력"
+        rec_class = "rec-away"
+    elif h_prob > 45:
+        rec_text = f"{m['home_team']} 우세"
+        rec_class = "rec-home"
+    elif a_prob > 45:
+        rec_text = f"{m['away_team']} 우세"
+        rec_class = "rec-away"
 
-                # Layout
-                col1, col2 = st.columns([1, 2])
-                
-                with col1:
-                    st.markdown(f"**{m['date']} {m['time']}**")
-                    st.markdown(f"### {m['home_team']}")
-                    st.markdown(f"<div class='vs-badge' style='text-align:center'>VS</div>", unsafe_allow_html=True)
-                    st.markdown(f"### {m['away_team']}")
-                    
-                    if pred['is_volleyball']:
-                         st.markdown(f"**예상 스코어: {int(pred['score_h'])} : {int(pred['score_a'])}**")
-                    else:
-                         st.markdown(f"**예상 스코어: {int(pred['score_h']+0.4)} - {int(pred['score_a']+0.4)}**")
+    if pred['is_volleyball']:
+        score_str = f"예상 세트 {int(pred['score_h'])} : {int(pred['score_a'])}"
+    else:
+        score_str = f"예상 스코어 {int(pred['score_h']+0.4)} - {int(pred['score_a']+0.4)}"
 
-                with col2:
-                    # Probability Bar using Progress Bar (Hack for single color, but we use metrics)
-                    c1, c2, c3 = st.columns(3)
-                    c1.metric("홈 승", f"{h_prob:.1f}%")
-                    c2.metric("무승부", f"{d_prob:.1f}%")
-                    c3.metric("원정 승", f"{a_prob:.1f}%")
-                    
-                    st.markdown(f"#### 추천: <span class='rec-card {rec_bg}'>{rec_text}</span>", unsafe_allow_html=True)
-                    
-                    with st.expander("💡 상세 분석 코멘트 보기", expanded=True):
-                        st.markdown(f"{m.get('analysis_note', '데이터 분석 중')}")
-                        st.caption(f"최근 5경기: 홈({m['home_stats']['recent_form']}) vs 원정({m['away_stats']['recent_form']})")
-                
-                st.divider()
+    # Match Card
+    card_html = f"""
+<div class="match-card">
+    <span class="league-badge">{m['league']} | {m['date']} {m['time']}</span>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin: 15px 0;">
+        <div style="text-align: center; width: 40%;">
+            <div class="team-name">{m['home_team']}</div>
+        </div>
+        <div style="text-align: center; color: #aaa; font-weight: bold;">VS</div>
+        <div style="text-align: center; width: 40%;">
+            <div class="team-name">{m['away_team']}</div>
+        </div>
+    </div>
+    <div class="score-pred">{score_str}</div>
+    <div class="{rec_class} rec-badge">{rec_text}</div>
+</div>
+"""
+    st.markdown(card_html, unsafe_allow_html=True)
+    
+    # Progress Bar
+    progress_html = f"""
+<div style="display: flex; height: 12px; border-radius: 6px; overflow: hidden; margin-top: 5px; margin-bottom: 5px;">
+    <div style="width: {h_prob}%; background-color: #e74c3c;"></div>
+    <div style="width: {d_prob}%; background-color: #95a5a6;"></div>
+    <div style="width: {a_prob}%; background-color: #3498db;"></div>
+</div>
+<div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: #888; margin-bottom: 15px;">
+    <span>홈 {h_prob:.0f}%</span>
+    <span>무 {d_prob:.0f}%</span>
+    <span>원정 {a_prob:.0f}%</span>
+</div>
+"""
+    st.markdown(progress_html, unsafe_allow_html=True)
+    
+    # Detailed Factors
+    factors = m.get('key_factors', [])
+    if factors:
+         with st.expander("🧐 분석 근거 & 핵심 포인트 보기", expanded=False):
+            st.markdown(f"**💡 {m.get('analysis_note', '')}**")
+            st.markdown("---")
+            for factor in factors:
+                st.markdown(f"- {factor}")
+            
+            st.caption(f"최근 5경기 폼: 홈({m['home_stats']['recent_form']}) vs 원정({m['away_stats']['recent_form']})")
+    else:
+         with st.expander("📊 상세 분석 보기", expanded=False):
+            st.write(m.get('analysis_note', '데이터 분석 중...'))
+            
+    st.write("") 
 
-# Footer
 st.markdown("---")
-st.markdown("Developed by Toto Analyzer AI | Data source: Web Search & Simulation")
+st.caption("Produced by Toto Analyzer AI")
